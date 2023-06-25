@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    border: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("back-img.jpeg");
+    background-size:cover;
+    color: #fff;
+ 
+}
+.login-form form{
+    height: 450px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgba(218,158,83,.7);
+    backdrop-filter: blur(5px);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.login-header{
+    text-align: center;
+    font-size: 2rem;
+
+}
+.input-item{
+    
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.input-item label{
+    font-size: 1.1rem;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .5s ;
+}
+.input-item input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    transition: .5s ease 0s;
+
+}
+
+
+.checkbox{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgb(62,32,130);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+button:hover{
+    background-color: rgb(112, 87, 170);
+    transform:scale(1.1);
+}
+
+.input-item input:focus{
+    border-bottom: 5px solid rgb(62,32,130);
+
+}
+.checkbox .checkbox-input input{
+    padding: 5px;
+}
+.checkbox a{
+    color: #000000;
+    text-decoration: none;
+}
